@@ -402,6 +402,7 @@ img.front{
 .p-par{
   color: white;
   font-size: 0.7em;
+  line-height: 15px;
 }
 .p-link{
   text-decoration: none;
