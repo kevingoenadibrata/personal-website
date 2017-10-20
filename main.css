@@ -340,7 +340,10 @@ img.front{
 /* PROJECTS PAGE */
 
 .project-container{
-  width: 100vw;
+
+  width: 70vw;
+  margin: auto;
+  margin-top: 17vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -355,11 +358,31 @@ img.front{
 }
 
 .p-title{
-  color: rgb(214, 214, 214);
+  color: #545454;
+  box-shadow: 0px 17px 24px -5px rgba(0,0,0,0.5);
   font-weight: 400;
-  font-size: 1.5em;
-  margin-top: 2vh;
+  font-size: 1em;
   margin-bottom: 2vh;
+  padding-top: 4%;
+  width: 100%;
+  height: 7%;
+  position: relative;
+  background-color: rgb(172, 172, 172);
+}
+
+.p-body-container{
+  position: relative;
+  margin: auto;
+  margin-top: 3%;
+  width: 85%;
+  height: 55%;
+  text-align: left;
+}
+
+.p-subtitle{
+  color: rgb(209, 209, 209);
+  font-size: 1.2em;
+  margin-bottom: 4%;
 }
 
 .p-img{
@@ -367,18 +390,48 @@ img.front{
   height: 20vh;
   background-color: white;
   margin: auto;
+  overflow: hidden;
   margin-top: 1vh;
+}
+
+.p-img img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .p-par{
   color: white;
+  font-size: 0.7em;
 }
 .p-link{
-  color: rgb(94, 197, 230);
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 0.7em;
+  position: absolute;
+  left: 30%;
+  bottom: 5%;
+  width: 40%;
+  text-align: center;
+  border-radius: 20px;
+  border: black solid 1px;
+  border-color: white;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+  -webkit-transition-duration:1s;
+}
+
+.p-link:hover{
+  width: 50%;
+  left: 25%;
 }
 
 .p-button{
-  width: 15vw;
+
+
 }
 
 /* CONTACT PAGE */
