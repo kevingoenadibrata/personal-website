@@ -1,6 +1,6 @@
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 767px)
+  and (max-device-width: 900px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
     /*INTRO ANIMATION*/
@@ -99,5 +99,27 @@
     .number,
     .email{
       font-size: 3vw;
+    }
+
+    .projectsanchor{
+      margin-top: 20vh;
+    }
+    .project-container{
+      flex-direction: column;
+      width: 80vw;
+    }
+
+    .p-card{
+      width: 80vw;
+      margin: 0vw;
+      margin-bottom: 10vh;
+    }
+    .p-img{
+      width: 70vw;
+      height: 20vh;
+      background-color: white;
+      margin: auto;
+      overflow: hidden;
+      margin-top: 1vh;
     }
 }
