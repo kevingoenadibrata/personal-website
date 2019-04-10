@@ -1,169 +1,154 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-  <head>
-    <title>Kevin Goenadibrata</title>
-    <meta name="viewport" content="width=device-width">
-	  <link rel="stylesheet" type="text/css" href="main.css"/>
-	  <link rel="stylesheet" type="text/css" href="responsive.css"/>
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  </head>
 
-  <body>
-    <header>
-      <div class="nav">
-        <ul>
-          <li class="home js--scroll-home">.home</li>
-          <li class="about js--scroll-about">.about</li>
-          <li class="skills js--scroll-skills">.skills</li>
-          <li class="projects js--scroll-projects">.projects</li>
-          <li class="contact js--scroll-contact">.contact</li>
-        </ul>
-      </div>
-    </header>
+<head>
+  <title>Kevin Goenadibrata</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="jquery.waypoints.min.js"></script>
+</head>
 
-    <div class="cover"></div>
-    <div>
-      <ul  class = "icons">
-        <li> <a href= "https://www.instagram.com/kayaknyasihkevin/" target="_blank" > <img src="images/icon-instagram.png" /> </a> </li>
-        <li> <a href= "https://www.linkedin.com/in/kevin-goenadibrata-899930108" target= "_blank"><img src="images/icon-linkedin.png"/> </a> </li>
-        <li> <a href= "https://www.github.com/kevingoenadibrata" target= "_blank"><img src="images/icon-github.png"/> </a> </li>
-      </ul>
+<body onload="start()">
+
+  <div class="side-container">
+    <div id="navbar">
+      <img src="img/logo.png" id="logo" />
+      <h3 id="about-nav">about</h3>
+      <h3 id="skills-nav">skills</h3>
+      <h3 id="projects-nav">projects</h3>
+      <h3 id="contact-nav">contact</h3>
     </div>
+  </div>
+  <div class="side-container-left"></div>
+  <div id="spaceship"></div>
 
-    <div class="homeanchor anchor"></div>
 
-    <section class="frontpage">
-      <img class="front" src="images/frontphoto.jpg"/>
-      <h1 class="header"> KEVIN<span class="lighter">GOENADIBRATA</span> </h1>
-      <div class="container"><a id="changeText"></a></div>
-    </section>
 
-    <div class="aboutanchor anchor"></div>
-
-    <div class ="aboutpage">
-      <section class="body1 cards">
-        <h2 class="title"> My Life in a Nutshell </h2>
-        <p class="par" id="p1">
-          Born and raised in the city of heroes, <span class= "imp">Surabaya, Indonesia</span>. Had always
-          been <span class= "imp">the jolliest</span> among the rest. Made pocket money through <span class= "imp">logo designs</span>,
-          invitation designs, posters, etc. when were still in high school. Served at church with my overrated <span class= "imp">guitar skills</span>.
-        </p>
-      </section>
-
-      <section class="body2 cards">
-        <h2 class="title"> My Triton Life </h2>
-        <p class="par" id="p2">
-          Started my journey in <span class= "imp">University of California, San Diego</span>, in 2016 and
-          expected to earn my <span class= "imp">Computer Science B.S.</span> degree by <span class= "imp">2019</span>. Currently doing
-          computer-science-based projects with other tritons.
-        </p>
-      </section>
-
-      <section class="body3 cards">
-        <h2 class="title"> My Professional Life </h2>
-        <p class="par" id="p3">
-          Worked as a <span class="imp">marketing intern</span> in <span class="imp">Top 1 Global and Ruangguru</span>. Worked with image processing
-          software such as Photoshop, Illustrator. Have a high interest in <span class="imp">Front-end development</span>
-          especially leaning towards. Currently doing small projects in JavaScript and <span class="imp">starting to learn
-          React and Database</span> for future projects.
-        </p>
-      </section>
+  <div class="container" id="home-container">
+    <div class="grid" id="home-grid">
+      <div id="home-grid-left">
+        <h1 class="large-text pen">hi, my name is</h1>
+        <div id ="container-anim-home-1" class="container-anim-home firstname"><h1 class="super-large-text name">kevin</h1></div>
+        <div id ="container-anim-home-2" class="container-anim-home"><h1 class="super-large-text name lastname">goenadibrata</h1></div>
+      </div>
+      <div id="home-grid-right"></div>
     </div>
-
-    <div class="skillsanchor anchor"></div>
-
-    <section class ="skillspage">
-      <div class = "skill-container">
-        <span class = "skill-label">FRONT_END</span>
-        <ul class = "anim frontend">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </div>
-
-      <div class = "skill-container">
-        <span class = "skill-label">BACK_END</span>
-        <ul class = "anim backend">
-          <li>C++</li>
-          <li>Java</li>
-          <li>Python</li>
-        </ul>
-      </div>
-
-      <div class = "skill-container">
-        <span class = "skill-label">TOOLS</span>
-        <ul class = "anim tools">
-          <li>Photoshop</li>
-          <li>Illustrator</li>
-          <li>GarageBand</li>
-        </ul>
-      </div>
-    </section>
-
-    <div class="projectsanchor anchor"></div>
-
-    <div class="project-container">
-      <div class="p-card" id="p-card1">
-        <div class="p-title">isPrime.io</div>
-        <div class="p-img"><img src="images/isprime.jpg" /></div>
-        <div class="p-body-container">
-          <h2 class= "p-subtitle">Quick and Pretty Prime Number Checker</h2>
-          <p class="p-par">HTML, CSS, JavaScript</br></br>isPrime.io was my first out-of-school project on web development. Developed a simple prime number checker using javascript. This was inspired by a prime number question on a math class.</p>
-          <a class="p-link" href="http://isPrime.io" target="blank">website</a>
+  </div>
+  <div class="container" id="about-container">
+    <div class="grid" id="about-grid">
+      <div id="about-grid-left"></div>
+      <div id="about-grid-right">
+        <div id="container-anim-about">
+          <h1 class="large-text">Code + Design</h1>
         </div>
-      </div>
-      <div class="p-card" id="p-card1">
-        <div class="p-title">Spctrm</div>
-        <div class="p-img"><img src="images/spctrm.jpg" /></div>
-        <div class="p-body-container">
-          <h2 class= "p-subtitle">Google Chrome Extension Color Picker</h2>
-          <p class="p-par">HTML, CSS, JavaScript, Chrome API</br></br>Spctrm is a Google Chrome Extension that was developed by Mark Darmadi (UCSD Software Engineer) and I. We noticed that it is hard to extract color from the internet and we decided to work on this 2-month project.</p>
-          <a class="p-link" href="http://bit.ly/spctrmChrome" target="blank">website</a>
-        </div>
-      </div>
-      <div class="p-card" id="p-card1">
-        <div class="p-title">Email Fix</div>
-        <div class="p-img"><img src="images/emailFIX.jpg" /></div>
-        <div class="p-body-container">
-          <h2 class= "p-subtitle">Time-saving Invalid Email Fixer</h2>
-          <p class="p-par">HTML, CSS, JavaScript</br></br>Email Fix was made when I was interning at Ruangguru's marketing department. One of the problem we encounter was that customers sometimes enters invalid emails. I developed this web app and was used as a filter for the registration process.</p>
-          <a class="p-link" href="http://emailfix.kgoenadibrata.com" target="blank">website</a>
-        </div>
-      </div>
-      <div class="p-card" id="p-card1">
-        <div class="p-title">JUMP Game</div>
-        <div class="p-img"><img src="images/jump.jpg" /></div>
-        <div class="p-body-container">
-          <h2 class= "p-subtitle">Adrenaline Pumping Mini Game</h2>
-          <p class="p-par">HTML, CSS, JavaScript</br></br>JUMP is a simple javascript game that I made during my spare time. It was developed because I was interested on thinking as a game developers. It was also a stepping stone before Spctrm was made.</p>
-          <a class="p-link" href="http://jump.kgoenadibrata.com" target="blank">website</a>
-        </div>
+        <p class="small-text">
+          Hello recruiters, friends, families, random-people, online-cats, etc! I&#39;m Kevin and I love to code and design. I will be graduating mid-2019 from University of California San Diego (woohoo!). I do tons of software development, web designing and developing, marketing graphics, branding, and anything you can think of under the field code and design. If you are looking for someone that has a good taste of design and aesthetics with a working logical brain as well, you have found the right guy! For the icing on top, I can serenade you with my guitar, I take photos before I eat, I eat before I code. Here&#39;s an easter egg, type &#39;blastoff&#39; on your keyboard right now :D enjoy!
+        </p>
       </div>
     </div>
+  </div>
+  <div class="container" id="skills-container">
+    <div class="grid" id="skills-grid">
+      <div id="skills-grid-1">
+        <h2 class="large-text">i can code</h2>
+      </div>
+      <div id="skills-grid-2">
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+        <h1>C++</h1>
+        <h1>Javascript</h1>
+        <h1>ReactJS</h1>
+        <h1>Bash</h1>
+        <h1>Python</h1>
+        <h1>OCaml</h1>
+        <h1>CSS</h1>
+        <h1>C++</h1>
+        <h1>Javascript</h1>
+        <h1>ReactJS</h1>
+        <h1>Bash</h1>
+        <h1>Python</h1>
+        <h1>OCaml</h1>
+        <h1>CSS</h1>
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+      </div>
+      <div id="skills-grid-3">
+        <h2 class="large-text">i can also do</h2>
+      </div>
+      <div id="skills-grid-4">
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+        <h1>C++</h1>
+        <h1>Javascript</h1>
+        <h1>ReactJS</h1>
+        <h1>Bash</h1>
+        <h1>Python</h1>
+        <h1>OCaml</h1>
+        <h1>CSS</h1>
+        <h1>C++</h1>
+        <h1>Javascript</h1>
+        <h1>ReactJS</h1>
+        <h1>Bash</h1>
+        <h1>Python</h1>
+        <h1>OCaml</h1>
+        <h1>CSS</h1>
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+        <h1>&nbsp</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="projects-container">
+    <h1 class="super-large-text project-title">look at my toys!</h1>
+    <div id="project-entries">
 
+    </div>
+  </div>
+  <div class="container" id="contact-container">
+    <div id="text-container">
+      <div class="anim-slide" id="anim-slide-1"><h1 class="super-large-text contact-text">if you want to contact me</h1>,</div>
+      <div class="anim-slide" id="anim-slide-2"><h1 class="super-large-text contact-text">it&#39;s best to reach out through</h1></div>
+      <div class="anim-slide" id="anim-slide-3"><h1 class="super-large-text contact-text"><a href="mailto:kevingoenadibrata@gmail.com?subject=I%20was%20on%20your%20website!" target="_blank" style="color: #fc5d65; cursor: pointer" >kevingoenadibrata@gmail.com</a>,</h1></div>
+      <div class="anim-slide" id="anim-slide-4"><h1 class="super-large-text contact-text">you can also <a href="./resume.pdf" target="_blank" style="color: #45aaf2; cursor: pointer">grab my resume</a>,</h1></div>
+      <div class="anim-slide" id="anim-slide-5"><h1 class="super-large-text contact-text">my <a href="https://www.github.com/kevingoenadibrata" target="_blank" style="color: #26dd81; cursor: pointer">github page</a>, and my</h1></div>
+      <div class="anim-slide" id="anim-slide-6"><h1 class="super-large-text contact-text"><a href="https://instagram.com/kevingoramibakar" target="_blank" style="color: #fd9744; cursor: pointer">instagram</a>. k thx bye.</h1></div>
+    </div>
+  </div>
 
-    <div class="contactanchor anchor"></div>
+  <div class="container" id="footer-container">
+    <div id="line"></div>
+    <div class="footer-grid-container">
+      <div class="footer-left">
+        <img src="img/logo.png" class="logo-footer" />
+      </div>
+      <div class="footer-right">
+        <a href="https://instagram.com/kevingoramibakar" target="_blank">
+          <img src="img/icon-insta.png" class="logo-footer" />
+        </a>
 
-    <section class="contactpage">
-      <h3 class="titlecontact"> CONTACT </h3>
-      <h3 class="name contactContent"> KEVIN GOENADIBRATA </h3>
-      <h3 class="number contactContent"> +1(925)639-5865 </h3>
-      <h3 class="email contactContent"> kevingoenadibrata@gmail.com </h3>
-      <a href="https://docs.google.com/document/d/1lTEf_95yzomrhk3MT51Wk-ZEs2rl6VbsamWM5W44QbI/edit?usp=sharing" target="_blank" class="resume">
-        r&#233;sum&#233; </a>
-    </section>
+        <a href="https://www.github.com/kevingoenadibrata" target="_blank">
+          <img src="img/icon-github.png" class="logo-footer" />
+        </a>
 
-    <span class="copyright">Copyright &copy; 2017 Kevin Goenadibrata</span>
+        <a href="mailto:kevingoenadibrata@gmail.com?subject=I%20was%20on%20your%20website!" target="_blank">
+          <img src="img/icon-email.png" class="logo-footer" />
+        </a>
+        
+      </div>
+    </div>
+  </div>
 
-    <script src="http://code.jquery.com/jquery-2.1.3.min.js"> </script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery-easing.js"></script>
+  <!-- scripts -->
+  <script src="jquery-easing.js"></script>
+  <script src="rocket.js"> </script>
+  <script src="app.js"> </script>
+  <script src="konami.js"> </script>
 
-    <script src="js/scroll.js"></script>
-    <script src="js/waypoints.js"></script>
-    <script src="js/changetext.js"></script>
-    <script src="js/hover.js"></script>
-  </body>
+</body>
+
 </html>
