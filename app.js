@@ -7,6 +7,8 @@ function start(){
   renderProjects();
   initScrolls();
   initializeWayPoints();
+  alertify.set('notifier','position', 'top-center');
+  alertify.message("Try typing 'blastoff'");
 }
 
 function initSkills(){
@@ -113,13 +115,13 @@ function renderProjects(){
   var str = "";
   for(var i = 0; i < projects.length; i++){
     var p = projects[i];
-    str += `<div class="project-entry">
+    str += `
+            <div class="project-entry">
+            <a class="noeffect" href="http://${p.link}" target="_blank">
             <div class="icon-container" style="background: linear-gradient(to right, ${p.color},${p.color} 50%,#ffffff 50%,#ffffff)"><div class="project-icon icon" style="background-image: url('${p.img}')"></div></div>
             <div class="project-center"><h1 class="medium-text">${p.name}</h1></div>
             <div class="project-center"><h1 class="small-text project-desc">${p.desc}</h1></div>
-            <a class="open-icon icon" href="http://${p.link}" target="_blank"></a>
-            <div class="github-icon icon"></div>
-            </div> `;
+            </a></div>`;
   }
 
   containerElement.html(str);
