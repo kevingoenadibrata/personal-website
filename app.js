@@ -102,6 +102,7 @@ function project(name, desc, img, color, link){
 
 function initScrolls(){
   $("#logo").click(function (){ $('html, body').animate({scrollTop: $("#home-container").offset().top}, 700, 'easeInOutQuart');});
+  $("#logo-bottom").click(function (){ $('html, body').animate({scrollTop: $("#home-container").offset().top}, 700, 'easeInOutQuart');});
   $("#about-nav").click(function (){ $('html, body').animate({scrollTop: $("#about-container").offset().top}, 700, 'easeInOutQuart');});
   $("#projects-nav").click(function (){ $('html, body').animate({scrollTop: $("#projects-container").offset().top}, 700, 'easeInOutQuart');});
   $("#skills-nav").click(function (){ $('html, body').animate({scrollTop: $("#skills-container").offset().top}, 700, 'easeInOutQuart');});
