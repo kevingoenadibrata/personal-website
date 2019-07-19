@@ -1,6 +1,12 @@
 
 var projects = [];
 
+$('#big-container').hide();
+$('#big-container').ready(() => {
+  $('#big-container').show();
+  $('#loader').hide();
+});
+
 function start(){
   initSkills();
   initProjects();
